@@ -5,6 +5,7 @@ Pillow
 pydicom
 streamlit
 streamlit_cropper
+keras
 tensorflow
 tensorflow-io
 tf-nightly
