@@ -12,7 +12,7 @@ def modelo_segmentacion(imagen):
     imagen = cargar_imagen(imagen)
     imagen = np.squeeze(imagen)
     print('Segmentacion shape:',imagen.shape)
-    modelo = tf.keras.models.load_model('BreastCancerSegmentor.h5')
+    modelo = tf.keras.models.load_model('/BreastCancerSegmentor.h5')
     #prediccion = modelo.predict(imagen)
     prediccion = modelo.predict(tf.expand_dims(imagen, 0))
     print('prediccion:', prediccion.shape)
@@ -26,7 +26,7 @@ def modelo_clasificacion(ruta_imagen):
     #print(imagen.shape)
     #imagen_prueba.append(imagen)
     #print(imagen_prueba.shape)
-    modelo = tf.keras.models.load_model('ModeloClasificacion.h5')
+    modelo = tf.keras.models.load_model('/ModeloClasificacion.h5')
     #archivo_imagen = tf.keras.utils.get_file(ruta_imagen, origin=ruta_imagen)
     #img_height = 256
     #img_width = 256
