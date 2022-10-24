@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
-from  preprocess import cargar_dicom_file
+from preprocess import cargar_dicom_file
 from modelos import modelo_segmentacion, modelo_clasificacion
 
 INFORMACION_PROYECTO = 'Mostrar información del proyecto'
