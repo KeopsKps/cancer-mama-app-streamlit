@@ -1,10 +1,6 @@
-import tempfile
-from io import BytesIO
-
 import pydicom
 
 import numpy as np
-import tensorflow as tf
 import tensorflow_io as tfio
 
 
